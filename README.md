@@ -1,4 +1,5 @@
-dota2tv
+Dota2VN TV
 =======
 
 Dota 2 Streams Kollection
+<===== By Krad =====>
