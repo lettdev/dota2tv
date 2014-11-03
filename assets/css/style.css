@@ -1,0 +1,34 @@
+.tv-navbar {
+	background: #111;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 50px;
+	z-index: 3;
+	-webkit-box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
+	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
+}
+.tv-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.tv-nav li a {
+	height: 50px;
+	width: 50px;
+	display: block;
+	padding: 13px;
+	font-size: 20px;
+	color: #ddd;
+	background: transparent;
+	cursor: pointer;
+}
+.tv-nav li a:hover {
+	background: #000;
+	color: #fff;
+}
+#tv-help {
+	position: absolute;
+	bottom: 25px;
+}
