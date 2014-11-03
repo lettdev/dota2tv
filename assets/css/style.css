@@ -67,3 +67,17 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+#tv-stream, #tv-chat {
+  height: 100%;
+}
+#tv-stream {
+	margin-right: 280px;
+}
+#tv-chat {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 280px;
+}

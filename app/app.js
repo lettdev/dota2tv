@@ -10,6 +10,10 @@ dota2tv.config(['$routeProvider',
         templateUrl: 'app/views/home.html',
         controller: 'HomepageCtrl'
       }).
+      when('/watch', {
+        templateUrl: 'app/views/watch.html',
+        controller: 'HomepageCtrl'
+      }).
       otherwise({
         redirectTo: '/404'
       });
