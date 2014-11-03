@@ -17,15 +17,15 @@
 }
 /*========== Navbar ==========*/
 .tv-navbar {
-	background: #111;
+	background: #222;
 	position: fixed;
 	left: 0;
 	top: 0;
 	bottom: 0;
 	width: 50px;
 	z-index: 3;
-	-webkit-box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
-	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
+	-webkit-box-shadow: 2px 0 5px 0 rgba(0,0,0,0.2);
+	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.2);
 }
 .tv-brand {
 	background: url('https://lh5.googleusercontent.com/Mhk4DoRI9fn98QCtLK9JbM7Jt-backuWPQftbcnZ7BM=s50-no') no-repeat -1px center transparent;
@@ -44,7 +44,8 @@
 	height: 50px;
 	width: 50px;
 	display: block;
-	padding: 15px;
+	padding: 10px 15px;
+	text-align: center;
 	font-size: 20px;
 	color: #ddd;
 	background: transparent;
