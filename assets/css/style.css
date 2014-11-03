@@ -1,3 +1,38 @@
+/*
+== Style: Dota2VN TV;
+== Author: Krad;
+== Author Url: http://dota.tunglt.com;
+== Homepage Url: http://tv.dota2vn.com;
+== Version: 1;
+*/
+/*========== Global ==========*/
+body { 
+  background: #1e1e1e; 
+  color: #888;
+}
+
+.tooltip { z-index: 2000 !important; }
+.modal-content { background: #000; }
+.modal-header { border-bottom: 1px solid #111; }
+.modal-footer { border-top: 1px solid #111; }
+.modal-backdrop { background: #222; }
+.popover { background: rgba(0,0,0,0.6); }
+.popover-title { 
+	background: transparent;
+	border-color: #222;
+}
+.popover.right>.arrow:after { border-right-color: #111; }
+
+.stream-signal[data-signal='offline'] { background: #333; }
+.stream-signal[data-signal='online'] { background: #5cb85c; }
+.stream-signal[data-signal='unknown'] { background: #f0ad4e; }
+.grey { color: #666; }
+.green { color: #5cb85c; }
+.stream-status { 
+	font-size: 10px;
+	padding-left: 20px;
+}
+/*========== Navbar ==========*/
 .tv-navbar {
 	background: #111;
 	position: fixed;
@@ -8,6 +43,14 @@
 	z-index: 3;
 	-webkit-box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
 	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.8);
+}
+.tv-brand {
+	background: url('https://lh5.googleusercontent.com/Mhk4DoRI9fn98QCtLK9JbM7Jt-backuWPQftbcnZ7BM=s50-no') no-repeat -1px center transparent;
+	text-indent: -9999px;
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin: 15px 0;
 }
 .tv-nav {
 	margin: 0;
@@ -31,4 +74,12 @@
 #tv-help {
 	position: absolute;
 	bottom: 25px;
+}
+/*========== Contents ==========*/
+.tv-main {
+	position: relative;
+	margin-left: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
