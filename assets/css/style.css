@@ -6,23 +6,6 @@
 == Version: 1;
 */
 /*========== Global ==========*/
-body { 
-  background: #1e1e1e; 
-  color: #888;
-}
-
-.tooltip { z-index: 2000 !important; }
-.modal-content { background: #000; }
-.modal-header { border-bottom: 1px solid #111; }
-.modal-footer { border-top: 1px solid #111; }
-.modal-backdrop { background: #222; }
-.popover { background: rgba(0,0,0,0.6); }
-.popover-title { 
-	background: transparent;
-	border-color: #222;
-}
-.popover.right>.arrow:after { border-right-color: #111; }
-
 .stream-signal[data-signal='offline'] { background: #333; }
 .stream-signal[data-signal='online'] { background: #5cb85c; }
 .stream-signal[data-signal='unknown'] { background: #f0ad4e; }
