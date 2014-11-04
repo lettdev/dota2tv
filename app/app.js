@@ -10,8 +10,10 @@ dota2tv.config(['$routeProvider',
         templateUrl: 'app/views/home.html',
         controller: 'HomepageCtrl'
       }).
-      when('/watch/:streamID', {
-        templateUrl: 'app/views/watch.html',
+      when('/:streamService/:streamID', {
+        templateUrl: function(urlattr) {
+        	return 'app/views/' + urlattr.streamService + '.html'
+        },
         controller: 'WatchpageCtrl'
       }).
       otherwise({
