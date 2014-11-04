@@ -11,5 +11,5 @@ dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams',
   function ($scope, $http, $routeParams) {
-  	alert($routeParams.streamID);
+  	$scope.streamId = $routeParams.streamID;
   }]);
