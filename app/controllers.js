@@ -13,7 +13,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   function ($scope, $http, $routeParams) {
   	switch($routeParams.streamService) {
   		case "tw":
-  			$scope.streamVid = '<iframe src="http://www.twitch.tv/' + $routeParams.streamID + '/embed" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>';
+  			this.streamVid = '<iframe src="http://www.twitch.tv/' + $routeParams.streamID + '/embed" frameborder="0" scrolling="no" height="100%" width="100%"></iframe>';
   			break;
   	};
   }]);
