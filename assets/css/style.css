@@ -68,6 +68,14 @@
 	box-sizing: border-box;
 }
 
+.stream-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+}
 #tv-stream, #tv-chat {
   height: 100%;
 }

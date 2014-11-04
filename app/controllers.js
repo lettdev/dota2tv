@@ -8,3 +8,8 @@ dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
 
     $scope.orderProp = 'age';
   }]);
+
+dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http',
+  function ($scope, $http) {
+  	alert($routeParams.streamID);
+  }]);
