@@ -1,3 +1,4 @@
+<div ng-controller="watchControllers">
 	<nav class='tv-navbar' role='navigation'>
 		<div class='tv-header'>
 			<a class='tv-brand' href='http://tv.dota2vn.com'>KradTV</a>
@@ -17,7 +18,8 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="tv-main" ng-class="chatStatus">
+	<div class="tv-main" ng-class="{true: 'chat-enabled', false: 'chat-disabled'}[chatStatus]">
 		<div id="tv-stream" ng-bind-html="streamVid"></div>
 		<div id="tv-chat" ng-bind-html="streamChat"></div>
 	</div>
+</div>
