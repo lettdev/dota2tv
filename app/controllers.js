@@ -36,7 +36,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   }]);
 
 
-angular.module('ui.bootstrap.demo').controller('tvNavControllers', function ($scope, $modal, $log) {
+dota2tvControllers.controller('tvNavControllers', function ($scope, $modal, $log) {
 
   $scope.items = ['item1', 'item2', 'item3'];
 
@@ -64,7 +64,7 @@ angular.module('ui.bootstrap.demo').controller('tvNavControllers', function ($sc
 // Please note that $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
 
-angular.module('ui.bootstrap.demo').controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+dota2tvControllers.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
 
   $scope.items = items;
   $scope.selected = {
