@@ -9,8 +9,8 @@ dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
     $scope.orderProp = 'age';
   }]);
 
-dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams', '$sce', 
-  function ($scope, $http, $routeParams, $sce) {
+dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams', '$sce', '$rootScope', 
+  function ($scope, $rootScope, $http, $routeParams, $sce) {
   	// ---- Enable chat ---- //
   	$rootScope.chatStatus = 'chat-enabled';
   	// ---- Display stream ---- //
@@ -38,8 +38,8 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   	};
   }]);
 
-dota2tvControllers.controller('tvNavControllers', ['$scope', 
-	function ($scope) {
+dota2tvControllers.controller('tvNavControllers', ['$scope', '$rootScope', 
+	function ($scope, $rootScope) {
 	  	// ---- Show/Hide Comments ---- //
 	  	$scope.showHideChat = function () {
 	        if ($rootScope.chatStatus == 'chat-enabled') {
