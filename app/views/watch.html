@@ -20,6 +20,6 @@
 	</nav>
 	<div class="tv-main" ng-class="{true: 'chat-enabled', false: 'chat-disabled'}[chatStatus]">
 		<div id="tv-stream" ng-bind-html="streamVid"></div>
-		<div id="tv-chat" ng-bind-html="streamChat"></div>
+		<div id="tv-chat" ng-bind-html="streamChat" ng-show="chatStatus"></div>
 	</div>
 </div>
