@@ -34,9 +34,12 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			$scope.streamChat = $sce.trustAsHtml('<iframe width="100%" height="100%" src="http://www.hitbox.tv/embedchat/' + $routeParams.streamID + '" frameborder="0" allowfullscreen></iframe>');
   			break;
   	};
-  	// ---- End display stream ---- //
-  	// ---- Show/Hide Comments ---- //
-  	$scope.changeClass = function () {
-        	alert("test");
-    };
   }]);
+
+dota2tvControllers.controller('tvNavControllers', ['$scope', 
+	function ($scope) {
+	  	// ---- Show/Hide Comments ---- //
+	  	$scope.changeClass = function () {
+	        alert("test");
+	    };
+}])
