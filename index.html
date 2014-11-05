@@ -16,27 +16,8 @@
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body ng-controller="tvNavControllers">
-	<nav class='tv-navbar' role='navigation'>
-		<div class='tv-header'>
-			<a class='tv-brand' href='http://tv.dota2vn.com'>KradTV</a>
-		</div>
-		<!-- Features, links, forms, and other content -->
-		<div class='tv-collapse' id='tv-menu'>
-			<ul class='tv-nav'>
-				<li><a data-placement='right' data-target='#d2tv-BoxChannelList' data-toggle='modal' data-tooltip='tooltip' id='d2tv-MenuOpenCList' title='Channels List'><i class="fa fa-list"></i></a></li>
-				<li><a data-placement='right' data-tooltip='tooltip' title='Watch Other Channel'><i class="fa fa-plus"></i></a></li>
-				<li><a data-placement='right' data-tooltip='tooltip' title='Toggle Comment Bar' ng-click="showHideChat()"><i class="fa fa-comments"></i></a></li>
-				<li><a data-placement='right' data-target='#d2tv-BoxMatchTicker' data-toggle='modal' data-tooltip='tooltip' title='Match Schedule'><i class="fa fa-calendar"></i></a></li>
-			</ul>
-		</div>
-		<div class='tv-collapse' id='tv-help'>
-			<ul class='tv-nav'>
-				<li><a data-content='Tổng hợp stream Dota 2' data-placement='right' data-toggle='popover' title='KradTV 2014'><i class="fa fa-info-circle"></i></a></li>
-			</ul>
-		</div>
-	</nav>
-	<div class="tv-main" ng-view ng-class="chatStatus"></div>
+<body>
+	<div class="tv-wrapper" ng-view></div>
 	<!-- Scripts Fiend -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
