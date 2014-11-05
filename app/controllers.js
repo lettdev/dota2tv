@@ -10,9 +10,9 @@ dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
   }]);
 
 dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams', '$sce', 
-  function ($scope, $rootScope, $http, $routeParams, $sce) {
+  function ($scope, $http, $routeParams, $sce) {
   	// ---- Enable chat ---- //
-  	$rootScope.chatStatus = 'chat-enabled';
+  	$scope.chatStatus = 'chat-enabled';
   	// ---- Display stream ---- //
   	switch($routeParams.streamService) {
   		// Twitch.tv
