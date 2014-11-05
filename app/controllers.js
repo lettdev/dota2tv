@@ -11,6 +11,8 @@ dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
 
 dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams', '$sce', 
   function ($scope, $http, $routeParams, $sce) {
+  	// ---- Enable chat ---- //
+  	$scope.chat-status = "chat-enabled";
   	// ---- Display stream ---- //
   	switch($routeParams.streamService) {
   		// Twitch.tv
@@ -39,7 +41,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
 dota2tvControllers.controller('tvNavControllers', ['$scope', 
 	function ($scope) {
 	  	// ---- Show/Hide Comments ---- //
-	  	$scope.changeClass = function () {
-	        alert("test");
+	  	$scope.showHideChat = function () {
+	        alert("Fuck twitch chat!");
 	    };
 }])

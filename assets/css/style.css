@@ -79,13 +79,13 @@
 #tv-stream, #tv-chat {
   height: 100%;
 }
-#tv-stream {
-	margin-right: 280px;
-}
 #tv-chat {
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
-	width: 280px;
 }
+.chat-enabled #tv-stream { margin-right: 280px; }
+.chat-disabled #tv-stream {	margin-right: 0; }
+.chat-enabled #tv-chat { width: 280px; }
+.chat-disabled #tv-chat { width: 0; }
