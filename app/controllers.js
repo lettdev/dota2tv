@@ -19,8 +19,8 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			break;
   		// Csmtalk
   		case "cc":
-  			$scope.streamVid = $sce.trustAsHtml('<iframe scrolling="no" src="http://talktv.vn/streaming/play/embed/' + $routeParams.streamID + '" height="100%" width="100%"></iframe>');
-  			$scope.streamChat = $sce.trustAsHtml('<iframe scrolling="no" src="http://talktv.vn/streaming/chat/embed/' + $routeParams.streamID + '" height="100%" width="280"></iframe>');
+  			$scope.streamVid = $sce.trustAsHtml('<iframe frameborder="0" scrolling="no" src="http://talktv.vn/streaming/play/embed/' + $routeParams.streamID + '" height="100%" width="100%"></iframe>');
+  			$scope.streamChat = $sce.trustAsHtml('<iframe frameborder="0" scrolling="no" src="http://talktv.vn/streaming/chat/embed/' + $routeParams.streamID + '" height="100%" width="280"></iframe>');
   			break;
   		// Dailymotion
   		case "dm":
@@ -34,3 +34,10 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			break;
   	};
   }]);
+
+dota2tvControllers.controller('ShowHideChat', ['$scope', 
+	function ($scope) {
+		$scope.changeClass = function () {
+        	alert("test");
+        };
+}]);

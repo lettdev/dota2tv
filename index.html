@@ -22,10 +22,10 @@
 			<a class='tv-brand' href='http://tv.dota2vn.com'>KradTV</a>
 		</div>
 		<!-- Features, links, forms, and other content -->
-		<div class='tv-collapse' id='tv-menu'>
+		<div class='tv-collapse' id='tv-menu' ng-controller="ShowHideChat">
 			<ul class='tv-nav'>
 				<li><a data-placement='right' data-target='#d2tv-BoxChannelList' data-toggle='modal' data-tooltip='tooltip' id='d2tv-MenuOpenCList' title='Channels List'><i class="fa fa-list"></i></a></li>
-				<li><a data-placement='right' data-tooltip='tooltip' title='Watch Other Channel'><i class="fa fa-plus"></i></a></li>
+				<li><a data-placement='right' data-tooltip='tooltip' title='Watch Other Channel' ng-click="changeClass()"><i class="fa fa-plus"></i></a></li>
 				<li><a data-placement='right' data-tooltip='tooltip' id='d2tv-MenuCommentToggle' title='Toggle Comment Bar' val='on'><i class="fa fa-comments"></i></a></li>
 				<li><a data-placement='right' data-target='#d2tv-BoxMatchTicker' data-toggle='modal' data-tooltip='tooltip' title='Match Schedule'><i class="fa fa-calendar"></i></a></li>
 			</ul>
