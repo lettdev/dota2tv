@@ -38,14 +38,14 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   	};
   }]);
 
-dota2tvControllers.controller('tvNavControllers', ['$scope', '$rootScope', 
-	function ($scope, $rootScope) {
+dota2tvControllers.controller('tvNavControllers', ['$scope', 
+	function ($scope) {
 	  	// ---- Show/Hide Comments ---- //
 	  	$scope.showHideChat = function () {
-	        if ($rootScope.chatStatus == 'chat-enabled') {
-	        	$rootScope.chatStatus = 'chat-disabled';
+	        if ($scope.chatStatus == 'chat-enabled') {
+	        	$scope.chatStatus = 'chat-disabled';
 	        } else {
-	        	$rootScope.chatStatus = 'chat-enabled';
+	        	$scope.chatStatus = 'chat-enabled';
 	        }
 	    };
 }])
