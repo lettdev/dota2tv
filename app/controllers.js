@@ -1,4 +1,4 @@
-var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize', 'ui.bootstrap']);
+var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize', 'ui.bootstrap', 'modalControllers']);
 // Controller for Homepage
 dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
@@ -50,13 +50,8 @@ dota2tvControllers.controller('watchControllers', ['$scope', '$modal',
 	    $scope.showAddChannel = function (size) {
 		    var modalInstance = $modal.open({
 		      templateUrl: 'app/views/modals/md-addChannel.html',
-		      //controller: 'ModalInstanceCtrl',
-		      size: size,
-		      resolve: {
-		        items: function () {
-		          return $scope.items;
-		        }
-		      }
+		      controller: 'addChannelController',
+		      size: size
 		    });
 		};
 }]);
