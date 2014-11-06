@@ -55,7 +55,7 @@ dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
             var deferred = $q.defer();
 
             $timeout(function() {
-                $http.get('channels.json').success(function(data) {
+                $http.get('app/channels.json').success(function(data) {
                     deferred.resolve(data);
                 });
             }, 30);
