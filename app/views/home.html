@@ -8,8 +8,9 @@
 <div class="container">
 	<table class="table table-striped">
 		<tr ng-repeat="channel in data.channels">
+			<td><i class="ss" ng-class="{{channel.host}}"></i></td>
 			<td><a ng-href="/#/{{channel.host}}/{{channel.id}}">{{channel.title}}</a></td>
-			<td>{{channel.lang}}</td>
+			<td><i class="sl" ng-class="{{channel.lang}}"></i></td>
 		</tr>
 	</table>
 </div>

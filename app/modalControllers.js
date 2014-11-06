@@ -4,6 +4,7 @@ modalControllers.controller('addChannelController', ['$scope', '$modalInstance',
 	function ($scope, $modalInstance) {
 	  $scope.ok = function () {
 	    $modalInstance.close();
+	    alert('fuckfuckfuck');
 	  };
 
 	  $scope.cancel = function () {
