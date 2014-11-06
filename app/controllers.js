@@ -1,12 +1,12 @@
-var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize']);
-
+var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize', 'ui.bootstrap']);
+// Controller for Homepage
 dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
 	dota2tvChannel.fetch().then(function(data) {
 		$scope.data = data;
 	});
   }]);
-
+// Controller for Watchpage
 dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams', '$sce', 
   function ($scope, $http, $routeParams, $sce) {  	
   	// ---- Display stream ---- //
@@ -33,7 +33,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			break;
   	};
   }]);
-
+// Controller for Watchpage Control
 dota2tvControllers.controller('watchControllers', ['$scope', 
 	function ($scope) {
 		// ---- Enable chat ---- //
@@ -46,8 +46,21 @@ dota2tvControllers.controller('watchControllers', ['$scope',
 	        	$scope.chatStatus = true;
 	        }
 	    };
-}]);
 
+	    $scope.open = function (size) {
+		    var modalInstance = $modal.open({
+		      templateUrl: 'app/views/modals/md-addChannel.html',
+		      //controller: 'ModalInstanceCtrl',
+		      size: size,
+		      resolve: {
+		        items: function () {
+		          return $scope.items;
+		        }
+		      }
+		    });
+		};
+}]);
+// Service for Channels data
 dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
     var d2tvChannel = {
         fetch: function() {
@@ -63,6 +76,5 @@ dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
             return deferred.promise;
         }
     }
-
     return d2tvChannel;
 });
