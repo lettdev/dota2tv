@@ -47,7 +47,7 @@ dota2tvControllers.controller('watchControllers', ['$scope',
 	        }
 	    };
 
-	    $scope.open = function (size) {
+	    $scope.showAddChannel = function (size) {
 		    var modalInstance = $modal.open({
 		      templateUrl: 'app/views/modals/md-addChannel.html',
 		      //controller: 'ModalInstanceCtrl',
