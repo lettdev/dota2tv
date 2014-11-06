@@ -46,12 +46,11 @@ dota2tvControllers.controller('watchControllers', ['$scope', '$modal',
 	        	$scope.chatStatus = true;
 	        }
 	    };
-
-	    $scope.showAddChannel = function (size) {
+	    // ---- Show Add Channel Modal ---- //
+	    $scope.showAddChannel = function () {
 		    var modalInstance = $modal.open({
 		      templateUrl: 'app/views/modals/md-addChannel.html',
 		      //controller: 'ModalInstanceCtrl',
-		      size: size,
 		      resolve: {
 		        items: function () {
 		          return $scope.items;
