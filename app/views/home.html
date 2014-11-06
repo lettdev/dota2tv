@@ -5,4 +5,9 @@
 		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>		
 	</div>  
 </div>
-<p ng-repeat="item in data.channels"></p>
+<table class="table table-striped">
+	<tr ng-repeat="channel in data.channels">
+		<td><a ng-href="/{{channel.host}}/{{channel.id}}">{{channel.title}}</a></td>
+		<td>{{channel.lang}}</td>
+	</tr>
+</table>
