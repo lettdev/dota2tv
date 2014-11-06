@@ -1,0 +1,214 @@
+{
+	"channels"	:	[
+		{
+			"host"	:	"tw",
+			"id"	:	"beyondthesummit",
+			"title"	:	"Beyond The Summit",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"beyondthesummit2",
+			"title"	:	"Beyond The Summit 2",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"joindotared",
+			"title"	:	"JoinDota Red",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"joindotablue",
+			"title"	:	"JoinDota Blue",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"dm",
+			"id"	:	"x1b1h6o",
+			"title"	:	"JoinDota DM",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dotastarladder_en",
+			"title"	:	"StarladderTV English",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dotastarladder_en",
+			"title"	:	"StarladderTV English",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"starladder1",
+			"title"	:	"StarladderTV Russian",
+			"lang"	:	"ru",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"starladder2",
+			"title"	:	"StarladderTV 2",
+			"lang"	:	"ru",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"starladder3",
+			"title"	:	"StarladderTV 3",
+			"lang"	:	"ru",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"starladder4",
+			"title"	:	"StarladderTV 4",
+			"lang"	:	"ru",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dreamleague",
+			"title"	:	"Dream League",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"d2l",
+			"title"	:	"Dota 2 League",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dotatalktv",
+			"title"	:	"DotaTalk TV",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dotatalktv2",
+			"title"	:	"DotaTalk TV 2",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dotacinema",
+			"title"	:	"Dota Cinema",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"kdl_en",
+			"title"	:	"Korean Dota 2 League",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"dendi",
+			"title"	:	"Dendi",
+			"lang"	:	"en",
+			"type"	:	"personal"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"sing_sing",
+			"title"	:	"sing_sing",
+			"lang"	:	"en",
+			"type"	:	"personal"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"arteezy",
+			"title"	:	"Arteezy",
+			"lang"	:	"en",
+			"type"	:	"personal"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"funn1k",
+			"title"	:	"Funn1k",
+			"lang"	:	"en",
+			"type"	:	"personal"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"admiralbulldog",
+			"title"	:	"[A]dmiralBulldog",
+			"lang"	:	"en",
+			"type"	:	"personal"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"pewpewvn",
+			"title"	:	"PewPew Studio",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"pewpewvn02",
+			"title"	:	"PewPew Studio 2",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"themmsstudio",
+			"title"	:	"The MMS Studio",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"esv",
+			"title"	:	"ESV Studio",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"rgn",
+			"title"	:	"RaptureVN",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"cc",
+			"id"	:	"spiritgaming",
+			"title"	:	"Spirit Gaming",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"tw",
+			"id"	:	"pewpewbhbt",
+			"title"	:	"PewPew Twitch",
+			"lang"	:	"vn",
+			"type"	:	"studio"
+		},
+		{
+			"host"	:	"hb",
+			"id"	:	"pimpmuckl",
+			"title"	:	"PimpmuckL",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		}
+	]
+}
