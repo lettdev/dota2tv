@@ -46,4 +46,23 @@ dota2tvControllers.controller('watchControllers', ['$scope',
 	        	$scope.chatStatus = true;
 	        }
 	    };
-}])
+}]);
+
+dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
+    var d2tvChannel = {
+        fetch: function() {
+
+            var deferred = $q.defer();
+
+            $timeout(function() {
+                $http.get('channels.json').success(function(data) {
+                    deferred.resolve(data);
+                });
+            }, 30);
+
+            return deferred.promise;
+        }
+    }
+
+    return d2tvChannel;
+});
