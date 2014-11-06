@@ -84,28 +84,28 @@
 .chat-disabled #tv-stream {	margin-right: 0; }
 
 /* Channel Services */
+.ss {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+}
 .ss-tw {
-	background: url(https://lh6.googleusercontent.com/-cir2FDA7iyk/U1SbuIdqGFI/AAAAAAAAEMc/hqnzRFy0_Xg/s16-no/tw.png) 20px center no-repeat transparent;
-	padding-left: 50px;
+	background: url(https://lh6.googleusercontent.com/-cir2FDA7iyk/U1SbuIdqGFI/AAAAAAAAEMc/hqnzRFy0_Xg/s16-no/tw.png) center center no-repeat transparent;
 }
 .ss-cc {
-	background: url(https://lh4.googleusercontent.com/-l_X_1icCk-I/U1SbuA1M3-I/AAAAAAAAEMY/UwuUVu1F5Xw/s16-no/cc.png) 20px center no-repeat transparent;
-	padding-left: 50px;
+	background: url(https://lh4.googleusercontent.com/-l_X_1icCk-I/U1SbuA1M3-I/AAAAAAAAEMY/UwuUVu1F5Xw/s16-no/cc.png) center center no-repeat transparent;
 }
 .ss-dm {
-	background: url(https://lh4.googleusercontent.com/-7dfVf2SZeRI/U1SbuNGAm9I/AAAAAAAAEMk/IQYeqTRy950/s16-no/dm.png) 20px center no-repeat transparent;
-	padding-left: 50px;
+	background: url(https://lh4.googleusercontent.com/-7dfVf2SZeRI/U1SbuNGAm9I/AAAAAAAAEMk/IQYeqTRy950/s16-no/dm.png) center center no-repeat transparent;
 }
 .ss-yy {
-	background: url(https://lh6.googleusercontent.com/-Ni4OYjR0AK4/U2fCMMi_zTI/AAAAAAAAEYw/sdQHrdPK7Xk/s16-no/yy.png) 20px center no-repeat transparent;
-	padding-left: 50px;
+	background: url(https://lh6.googleusercontent.com/-Ni4OYjR0AK4/U2fCMMi_zTI/AAAAAAAAEYw/sdQHrdPK7Xk/s16-no/yy.png) center center no-repeat transparent;
 }
 .ss-yt {
-	background: url(https://lh6.googleusercontent.com/-K0OUgriZ4lk/U2o2-Bj8bSI/AAAAAAAAEZY/W8IxhbVD8Uo/s16-no/yt.ico) 20px center no-repeat transparent;
-	padding-left: 50px;
+	background: url(https://lh6.googleusercontent.com/-K0OUgriZ4lk/U2o2-Bj8bSI/AAAAAAAAEZY/W8IxhbVD8Uo/s16-no/yt.ico) center center no-repeat transparent;
 }
 /* Flags */
-span.flag {
+.flag {
 background:url(https://lh4.googleusercontent.com/-Og2teWGdHeg/U2kO6LoFVgI/AAAAAAAAEZE/fBmmkJlvJyw/w180-h216-no/flags.png) no-repeat;
 display:inline-block;
 vertical-align:middle;
