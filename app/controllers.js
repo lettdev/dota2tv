@@ -34,8 +34,8 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   	};
   }]);
 // Controller for Watchpage Control
-dota2tvControllers.controller('watchControllers', ['$scope', 
-	function ($scope) {
+dota2tvControllers.controller('watchControllers', ['$scope', '$modal' 
+	function ($scope, $modal) {
 		// ---- Enable chat ---- //
   		$scope.chatStatus = true;
 	  	// ---- Show/Hide Comments ---- //
