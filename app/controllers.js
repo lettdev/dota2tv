@@ -1,6 +1,6 @@
 var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize']);
 
-dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http',
+dota2tvControllers.controller('HomepageCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
 	dota2tvChannel.fetch().then(function(data) {
 		$scope.data = data;
