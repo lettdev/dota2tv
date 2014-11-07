@@ -28,7 +28,7 @@
 	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.2);
 }
 .tv-brand {
-	background: url('../images/kradtv.png') no-repeat -1px center transparent;
+	background: url('../images/kradtv.png') no-repeat 0px center transparent;
 	text-indent: -9999px;
 	display: block;
 	height: 50px;
@@ -52,7 +52,7 @@
 	cursor: pointer;
 }
 .tv-nav li a:hover {
-	background: #000;
+	background: #111;
 	color: #3fb618;
 }
 #tv-help {
