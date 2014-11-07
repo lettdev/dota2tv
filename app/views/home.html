@@ -7,20 +7,32 @@
 	</div>  
 </div>
 <div class="container">
-	<input type="text" class="form-control" placeholder="Type text here to search..." ng-model="searchText.title">
-	<select class="form-control" ng-model="searchText.host">
-	  <option value="tw">Twitch</option>
-	  <option value="dm">Dailymotion</option>
-	  <option value="hb">Hitbox</option>
-	  <option value="cc">ccTalk</option>
-	  <option value="yt">Youtube</option>
-	</select>
-	<select class="form-control" ng-model="searchText.lang">
-	  <option value="en">English</option>
-	  <option value="ru">Russian</option>
-	  <option value="vn">Vietnamese</option>
-	  <option value="cn">Chinese</option>
-	</select>
+	<form role="form">
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="Type text here to search..." ng-model="searchText.title">
+	</div>
+	</form>
+	<form class="form-inline" role="form">
+	<div class="form-group">
+		<select class="form-control" ng-model="searchText.host">
+		  <option value="">Filter by stream services</option>
+		  <option value="tw">Twitch</option>
+		  <option value="dm">Dailymotion</option>
+		  <option value="hb">Hitbox</option>
+		  <option value="cc">ccTalk</option>
+		  <option value="yt">Youtube</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<select class="form-control" ng-model="searchText.lang">
+		  <option value="">Filter by languages</option>
+		  <option value="en">English</option>
+		  <option value="ru">Russian</option>
+		  <option value="vn">Vietnamese</option>
+		  <option value="cn">Chinese</option>
+		</select>
+	</div>
+	</form>
 	<table class="table table-striped">
 		<tr class="success">
 			<th>Stream Service</th>
