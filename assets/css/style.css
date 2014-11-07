@@ -28,7 +28,7 @@
 	box-shadow: 2px 0 5px 0 rgba(0,0,0,0.2);
 }
 .tv-brand {
-	background: url('assets/images/kradtv.png') no-repeat -1px center transparent;
+	background: url('../images/kradtv.png') no-repeat -1px center transparent;
 	text-indent: -9999px;
 	display: block;
 	height: 50px;
