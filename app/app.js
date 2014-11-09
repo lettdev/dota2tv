@@ -1,6 +1,7 @@
 var dota2tv = angular.module('dota2tv', [
 'ngRoute',
-'dota2tvControllers'
+'dota2tvControllers',
+'dota2tvDirectives'
 ]);
 
 dota2tv.config(['$routeProvider',
