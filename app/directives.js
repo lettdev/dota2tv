@@ -5,6 +5,6 @@ function () {
   return {
     restrict: 'E',
     replace: 'true',
-    templateUrl: 'app/views/channelsList.html'
+    template: 'Hello boy!'
   };
 });
