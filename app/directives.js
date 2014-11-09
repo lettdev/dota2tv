@@ -1,8 +1,3 @@
-/**
-*  Module
-*   DIRECTIVES
-* Description
-*/
 var dota2tvDirectives = angular.module('dota2tvDirectives', []);
 
 dota2tvDirectives.directive('channelsList', 

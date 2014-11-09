@@ -19,3 +19,11 @@ dota2tv.config(['$routeProvider',
         redirectTo: '/404'
       });
   }]);
+
+dota2tv.directive('channelsList', 
+function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'app/views/channelsList.html'
+  };
+});
