@@ -4,6 +4,7 @@ dota2tvDirectives.directive('channelsList',
 function () {
   return {
     restrict: 'E',
+    replace: 'true',
     templateUrl: 'app/views/channelsList.html'
   };
 });
