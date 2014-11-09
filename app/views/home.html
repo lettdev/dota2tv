@@ -39,7 +39,7 @@
 			<th>Stream Channel</th>
 			<th>Stream Language</th>
 		</tr>
-		<tr ng-repeat="channel in data.channels | filter:searchText">
+		<tr ng-repeat="channel in ChannelsData.channels | filter:searchText">
 			<td><i class="ss ss-{{channel.host}}"></i></td>
 			<td><a ng-href="/#/{{channel.host}}/{{channel.id}}">{{channel.title}}</a></td>
 			<td><i class="flag {{channel.lang | uppercase}}"></i></td>
