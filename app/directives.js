@@ -5,10 +5,10 @@
 */
 var dota2tvDirectives = angular.module('dota2tvDirectives', []);
 
-dota2tvDirectives.directive('channels-list', 
+dota2tvDirectives.directive('channelsList', 
 function () {
   return {
     restrict: 'E',
-    templateUrl: 'views/channelsList.html'
+    templateUrl: 'app/views/channels-list.html'
   };
 });
