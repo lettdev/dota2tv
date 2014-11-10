@@ -88,7 +88,7 @@
 .chat-enabled #tv-stream { margin-right: 280px; }
 .chat-disabled #tv-stream {	margin-right: 0; }
 
-#channelTools { margin-bottom: 20px; }
+#channelTools { margin-bottom: 15px; }
 #channelTools select { width: 100%; }
 /* Channel Services */
 .ss {
