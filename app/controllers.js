@@ -92,7 +92,11 @@ function checkChannelSignal(cdata) {
     // Check Twitch stream
     if (cdata[i].host == 'tw') {
       $.getJSON("https://api.twitch.tv/kraken/streams/" + cdata[i].id + ".json?callback=?", function(c) {
-        console.log(c.stream);
+        if (c.stream == null) {
+          console.log('fuck');
+        } else {
+          console.log('online baby');
+        }
       });
     }
   }
