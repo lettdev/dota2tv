@@ -99,8 +99,10 @@ function checkChannelSignal(cData) {
           success: function(c) {
             if (c.stream == null) {
               cData[i].status = 'Offline';
+              cData[i].description = '';
             } else {
               cData[i].status = 'Online';
+              cData[i].description = c.stream.channel.status;
             }
           }
         }); 
