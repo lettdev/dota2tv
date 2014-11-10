@@ -1,24 +1,5 @@
 var dota2tvControllers = angular.module('dota2tvControllers', ['ngSanitize', 'ui.bootstrap', 'modalControllers']);
 
-// Service for Channels data
-dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
-    var d2tvChannel = {
-        fetch: function() {
-
-            var deferred = $q.defer();
-
-            $timeout(function() {
-                $http.get('app/channels.json').success(function(data) {
-                    deferred.resolve(data);
-                });
-            }, 30);
-
-            return deferred.promise;
-        }
-    }
-    return d2tvChannel;
-});
-
 // Main Controller
 dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
