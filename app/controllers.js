@@ -23,9 +23,12 @@ dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
 dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
     dota2tvChannel.fetch().then(function(data) {
-      checkChannelSignal(data.channels);
       $scope.ChannelsData = data;
+      $timeout(function() {
+                checkChannelSignal($scope.ChannelsData.channels);
+            }, 30);
       
+      console.log($scope.ChannelsData);
     });  
 }]);
 
