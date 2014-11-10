@@ -88,7 +88,7 @@ dota2tvControllers.controller('watchControllers', ['$scope', '$modal',
 
 // Additionerino Functionerino
 function checkChannelSignal(cData) {
-  for (i = 0; i < cData.length; i++) {
+  for (var i = 0; i < cData.length; i++) {
     // Check Twitch stream
     if (cData[i].host == 'tw') {
       $.ajax({
@@ -97,9 +97,9 @@ function checkChannelSignal(cData) {
         dataType: 'json',
         success: function(c) {
           if (c.stream == null) {
-            cData[1].status = 'Offline';
+            cData[i].status = 'Offline';
           } else {
-            cData[1].status = 'Online';
+            cData[i].status = 'Online';
           }
         }
       }); 
