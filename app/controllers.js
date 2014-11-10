@@ -91,15 +91,13 @@ function checkChannelSignal(cData) {
   for (i = 0; i < cData.length; i++) {
     // Check Twitch stream
     if (cData[i].host == 'tw') {
-      var cStatus = [];
-      $.getJSON("https://api.twitch.tv/kraken/streams/" + cData[i].id + ".json?callback=?", function(c) {
+      $.getJSON("https://api.twitch.tv/kraken/streams/" + cData[i].id + ".json?callback=?", function(c, cData[i]) {
         if (c.stream == null) {
-          cStatus[i] = 'Offline';
+          cData[i].status = 'Offline';
         } else {
-          cStatus[i] = 'Online';
+          cData[i].status = 'Online';
         }
       });      
     }
-    cData[i].status = cStatus[i];
   }  
 }
