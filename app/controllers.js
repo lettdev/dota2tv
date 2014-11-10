@@ -93,9 +93,9 @@ function checkChannelSignal(cdata) {
     if (cdata[i].host == 'tw') {
       $.getJSON("https://api.twitch.tv/kraken/streams/" + cdata[i].id + ".json?callback=?", function(c) {
         if (c.stream == null) {
-          console.log('fuck');
+          console.log(cdata[i].id + ' - fuck');
         } else {
-          console.log('online baby');
+          console.log(cdata[i].id + ' - online baby');
         }
       });
     }
