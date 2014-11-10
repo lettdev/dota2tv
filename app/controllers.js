@@ -97,9 +97,9 @@ function checkChannelSignal(cData) {
         dataType: 'json',
         success: function(c) {
           if (c.stream == null) {
-            cData[i].status = 'Offline';
+            console.log(i + ' Fuck!');
           } else {
-            cData[i].status = 'Online';
+            console.log(i + ' Oh yeah baby!');
           }
         }
       }); 
