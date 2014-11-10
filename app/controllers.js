@@ -20,14 +20,13 @@ dota2tvControllers.factory('dota2tvChannel', function($q, $timeout, $http) {
 });
 
 // Main Controller
-dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel', '$timeout',
-  function ($scope, $http, dota2tvChannel, $timeout) {
+dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel',
+  function ($scope, $http, dota2tvChannel) {
     dota2tvChannel.fetch().then(function(data) {
       $scope.ChannelsData = data;
-      $timeout(function() {
+      $scope.$apply(function() {
         checkChannelSignal($scope.ChannelsData.channels);
-      }, 30);
-      
+      });      
       console.log($scope.ChannelsData);
     });  
 }]);
