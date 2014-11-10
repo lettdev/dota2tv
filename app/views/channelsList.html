@@ -28,12 +28,17 @@
 </div>
 </form>
 <table class="table table-striped table-hover">
+	<col style="width: 16px;" >
+	<col style="width: 20%;" >
+	<col style="width: 64px;" >
+	<col style="width: auto;" >
+	<col style="width: 20px;" >
 	<tr class="success">
-		<th>Stream Service</th>
+		<th></th>
 		<th>Stream Channel</th>
+		<th></th>
 		<th>Stream Status</th>
-		<th>Stream Description</th>
-		<th>Stream Language</th>
+		<th></th>
 	</tr>
 	<tr ng-repeat="channel in ChannelsData.channels | filter:searchText">
 		<td><i class="ss ss-{{channel.host}}"></i></td>

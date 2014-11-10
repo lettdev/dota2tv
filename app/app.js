@@ -37,3 +37,28 @@ dota2tv.factory('dota2tvChannel', function($q, $timeout, $http) {
     }
     return d2tvChannel;
 });
+
+// Additionerino Functionerino
+function checkChannelSignal(cData) {
+  for (i = 0; i < cData.length; i++) {
+    (function (i) {
+      // Check Twitch stream
+      if (cData[i].host == 'tw') {
+        $.ajax({
+          url: "https://api.twitch.tv/kraken/streams/" + cData[i].id + ".json?callback=?",
+          async: false,
+          dataType: 'json',
+          success: function(c) {
+            if (c.stream == null) {
+              cData[i].status = 'Offline';
+              cData[i].description = '';
+            } else {
+              cData[i].status = 'Online';
+              cData[i].description = c.stream.channel.status;
+            }
+          }
+        }); 
+      }
+    })(i);  
+  }  
+}
