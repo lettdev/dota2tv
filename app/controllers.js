@@ -7,7 +7,10 @@ dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel',
       $scope.ChannelsData = data;
       checkChannelSignal($scope.ChannelsData.channels);
       console.log($scope.ChannelsData);
-    });  
+    });
+    $scope.updateChannel = function() {
+      checkChannelSignal($scope.ChannelsData.channels);
+    };
 }]);
 
 // Controller for Homepage
