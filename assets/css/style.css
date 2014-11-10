@@ -83,6 +83,7 @@
 .chat-enabled #tv-stream { margin-right: 280px; }
 .chat-disabled #tv-stream {	margin-right: 0; }
 
+#channelTools select { width: 100%; }
 /* Channel Services */
 .ss {
 	display: inline-block;

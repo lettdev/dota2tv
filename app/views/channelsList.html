@@ -3,8 +3,8 @@
 	<input type="text" class="form-control" placeholder="Type text here to search..." ng-model="searchText.title">
 </div>
 </form>
-<form class="form-inline" role="form">
-<div class="form-group">
+<form id="channelTools" class="form-inline row" role="form">
+<div class="form-group col-sm-3">
 	<select class="form-control" ng-model="searchText.host">
 	  <option value="">Filter by stream services</option>
 	  <option value="tw">Twitch</option>
@@ -14,7 +14,7 @@
 	  <option value="yt">Youtube</option>
 	</select>
 </div>
-<div class="form-group">
+<div class="form-group col-sm-3">
 	<select class="form-control" ng-model="searchText.lang">
 	  <option value="">Filter by languages</option>
 	  <option value="en">English</option>
@@ -23,8 +23,15 @@
 	  <option value="cn">Chinese</option>
 	</select>
 </div>
-<div class="form-group">
-	<a class="btn btn-success" href="#" role="button" ng-click="updateChannel();">Refresh</a>
+<div class="form-group col-sm-3">
+	<select class="form-control" ng-model="searchText.status">
+	  <option value="">Filter by stream status</option>
+	  <option value="Online">Online</option>
+	  <option value="Offline">Offline</option>
+	</select>
+</div>
+<div class="form-group col-sm-3">
+	<a class="btn btn-success btn-block" href="#" role="button" ng-click="updateChannel();">Refresh</a>
 </div>
 </form>
 <table class="table table-striped table-hover">
