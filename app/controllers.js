@@ -88,21 +88,23 @@ dota2tvControllers.controller('watchControllers', ['$scope', '$modal',
 
 // Additionerino Functionerino
 function checkChannelSignal(cData) {
-  for (var i = 0; i < cData.length; i++) {
-    // Check Twitch stream
-    if (cData[i].host == 'tw') {
-      $.ajax({
-        url: "https://api.twitch.tv/kraken/streams/" + cData[i].id + ".json?callback=?",
-        async: false,
-        dataType: 'json',
-        success: function(c) {
-          if (c.stream == null) {
-            cData[i].status = 'Offline';
-          } else {
-            cData[i].status = 'Online';
+  for (i = 0; i < cData.length; i++) {
+    (function (i) {
+      // Check Twitch stream
+      if (cData[i].host == 'tw') {
+        $.ajax({
+          url: "https://api.twitch.tv/kraken/streams/" + cData[i].id + ".json?callback=?",
+          async: false,
+          dataType: 'json',
+          success: function(c) {
+            if (c.stream == null) {
+              cData[i].status = 'Offline';
+            } else {
+              cData[i].status = 'Online';
+            }
           }
-        }
-      }); 
-    }
+        }); 
+      }
+    })(i);  
   }  
 }
