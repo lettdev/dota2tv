@@ -24,7 +24,10 @@ dota2tvControllers.controller('MainCtrl', ['$scope', '$http', 'dota2tvChannel',
   function ($scope, $http, dota2tvChannel) {
     dota2tvChannel.fetch().then(function(data) {
       $scope.ChannelsData = data;
-    });  
+    });
+    for (i = 0; i < $scope.ChannelsData.channels.length; i++) {
+      $scope.ChannelsData.channels[i].status = 'Offline';
+    }
 }]);
 
 // Controller for Homepage

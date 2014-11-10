@@ -35,7 +35,7 @@
 	<tr ng-repeat="channel in ChannelsData.channels | filter:searchText">
 		<td><i class="ss ss-{{channel.host}}"></i></td>
 		<td><a ng-href="/#/{{channel.host}}/{{channel.id}}">{{channel.title}}</a></td>
-		<td>place holder</td>
+		<td>{{channel.status}}</td>
 		<td><em>place holder</em></td>
 		<td><i class="flag {{channel.lang | uppercase}}"></i></td>
 	</tr>
