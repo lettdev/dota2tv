@@ -28,11 +28,15 @@
 	<tr class="success">
 		<th>Stream Service</th>
 		<th>Stream Channel</th>
+		<th>Stream Status</th>
+		<th>Stream Description</th>
 		<th>Stream Language</th>
 	</tr>
-	<tr ng-repeat="channel in ChannelsData.channels | filter:searchText">
+	<tr ng-repeat="channel in dota2tvMain.ChannelsData.channels | filter:searchText">
 		<td><i class="ss ss-{{channel.host}}"></i></td>
 		<td><a ng-href="/#/{{channel.host}}/{{channel.id}}">{{channel.title}}</a></td>
+		<td>{{channel.status}}</td>
+		<td><em>{{channel.description}}</em></td>
 		<td><i class="flag {{channel.lang | uppercase}}"></i></td>
 	</tr>
 </table>
