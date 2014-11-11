@@ -78,13 +78,13 @@ function checkChannelSignal(cData) {
           break;
         case 'cc':
           cc_url = "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1";
-          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=?';
+          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=json';
           $.ajax({
             url: yql,
             async: false,
             dataType: 'json',
             success: function(c) {
-              if (c.live == 0) {
+              if (c.query.results.live == 0) {
                 cData[i].status = 'Offline';
                 cData[i].description = '';
               } else {
