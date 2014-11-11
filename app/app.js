@@ -77,11 +77,12 @@ function checkChannelSignal(cData) {
           });
           break;
         case 'cc':
+          cc_url = "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1";
+          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=?';
           $.ajax({
-            url: "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1",
+            url: yql,
             async: false,
-            crossDomain: true,
-            dataType: 'jsonp',
+            dataType: 'json',
             success: function(c) {
               if (c.live == 0) {
                 cData[i].status = 'Offline';
@@ -90,6 +91,7 @@ function checkChannelSignal(cData) {
                 cData[i].status = 'Online';
                 cData[i].description = c.title;
               }
+              console.log(c);
             }
           });
           break;
@@ -106,7 +108,6 @@ function checkChannelSignal(cData) {
                 cData[i].status = 'Online';
                 cData[i].description = c.livestream[0].media_status;
               }
-              console.log(c);
             }
           });
           break;
