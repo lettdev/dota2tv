@@ -78,9 +78,18 @@ function checkChannelSignal(cData) {
           break;
         case 'cc':
           cc_url = "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1?callback=json";
-          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=?';
-          $.getJSON( yql, function(c) {
-              if (c.query.results.p.live == 0) {
+          yql = 'https://query.yahooapis.com/v1/public/yql';
+          $.ajax({
+            url: yql,
+            async: false,
+            data: {
+              'q': 'SELECT * FROM json WHERE url="'+cc_url+'"',
+              'format': 'json',
+              'jsonCompat': 'new'
+            },
+            dataType: 'jsonp',
+            success: function(c) {
+              if (c.query.results.live == 0) {
                 cData[i].status = 'Offline';
                 cData[i].description = '';
               } else {
@@ -88,6 +97,7 @@ function checkChannelSignal(cData) {
                 cData[i].description = c.title;
               }
               console.log(c);
+            }
           });
           break;
         case 'hb':
