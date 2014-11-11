@@ -60,6 +60,40 @@ function checkChannelSignal(cData) {
             }
           });
           break;
+        case 'dm':
+          $.ajax({
+            url: "https://api.dailymotion.com/video/" + cData[i].id + "?fields=onair,title",
+            async: false,
+            dataType: 'json',
+            success: function(c) {
+              if (c.onair == false) {
+                cData[i].status = 'Offline';
+                cData[i].description = '';
+              } else {
+                cData[i].status = 'Online';
+                cData[i].description = c.title;
+              }
+            }
+          });
+          break;
+        case 'cc':
+          $.ajax({
+            url: "http://http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1",
+            async: false,
+            dataType: 'json',
+            success: function(c) {
+              if (c.live == 0) {
+                cData[i].status = 'Offline';
+                cData[i].description = '';
+              } else {
+                cData[i].status = 'Online';
+                cData[i].description = c.title;
+              }
+            }
+          });
+          break;
+        case 'hb':
+
         default:
           cData[i].status = 'Unknown';
           cData[i].description = '';
