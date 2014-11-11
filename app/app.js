@@ -77,12 +77,12 @@ function checkChannelSignal(cData) {
           });
           break;
         case 'cc':
-          cc_url = "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1";
-          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=json';
+          cc_url = "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1?callback=json";
+          yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from html where url="' + cc_url + '"') + '&format=json&callback=?';
           $.ajax({
             url: yql,
             async: false,
-            dataType: 'json',
+            dataType: 'jsonp',
             success: function(c) {
               if (c.query.results.live == 0) {
                 cData[i].status = 'Offline';
