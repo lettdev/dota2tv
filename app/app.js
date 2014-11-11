@@ -89,14 +89,13 @@ function checkChannelSignal(cData) {
             },
             dataType: 'jsonp',
             success: function(c) {
-              if (c.query.results.live == 0) {
+              if (c.query.results.json.live == 0) {
                 cData[i].status = 'Offline';
                 cData[i].description = '';
               } else {
                 cData[i].status = 'Online';
                 cData[i].description = c.title;
               }
-              console.log(c);
             }
           });
           break;
