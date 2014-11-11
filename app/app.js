@@ -78,7 +78,7 @@ function checkChannelSignal(cData) {
           break;
         case 'cc':
           $.ajax({
-            url: "http://http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1",
+            url: "http://talktv.vn/streaming/play/get-stream-data/channel/" + cData[i].id + "/limit/1",
             async: false,
             dataType: 'json',
             success: function(c) {
@@ -93,7 +93,21 @@ function checkChannelSignal(cData) {
           });
           break;
         case 'hb':
-
+          $.ajax({
+            url: "http://api.hitbox.tv/media/live/" + cData[i].id,
+            async: false,
+            dataType: 'json',
+            success: function(c) {
+              if (c.livestream.media_is_live == 0) {
+                cData[i].status = 'Offline';
+                cData[i].description = '';
+              } else {
+                cData[i].status = 'Online';
+                cData[i].description = c.livestream.media_status;
+              }
+            }
+          });
+          break;
         default:
           cData[i].status = 'Unknown';
           cData[i].description = '';
