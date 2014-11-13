@@ -11,3 +11,15 @@ modalControllers.controller('addChannelController', ['$scope', '$modalInstance',
 	    $modalInstance.dismiss('cancel');
 	  };
 }]);
+
+modalControllers.controller('viewChannelController', ['$scope', '$modalInstance',
+	function ($scope, $modalInstance) {
+	  $scope.ok = function () {
+	    $modalInstance.close();
+	    alert('fuckfuckfuck');
+	  };
+
+	  $scope.cancel = function () {
+	    $modalInstance.dismiss('cancel');
+	  };
+}]);
