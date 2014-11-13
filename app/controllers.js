@@ -67,4 +67,12 @@ dota2tvControllers.controller('watchControllers', ['$scope', '$modal',
 		      size: size
 		    });
 		};
+		// ---- Show View Channel Modal ---- //
+	    $scope.showViewChannel = function (size) {
+		    var modalInstance = $modal.open({
+		      templateUrl: 'app/views/modals/md-viewChannel.html',
+		      controller: 'viewChannelController',
+		      size: size
+		    });
+		};
 }]);
