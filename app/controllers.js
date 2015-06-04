@@ -45,7 +45,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			break;
   		case "az":
   			$scope.streamVid = $sce.trustAsHtml('<iframe src="http://www.azubu.tv/azubulink/embed=' + $routeParams.streamID + '" width="100%" height="100%" frameborder="0"></iframe>');
-  			$scope.streamChat = $sce.trustAsHtml('<iframe src="http://www.twitch.tv/kradnozd/chat?popout=" frameborder="0" scrolling="no" height="100%" width="280"></iframe>');
+  			$scope.streamChat = $sce.trustAsHtml('<iframe src="http://www.azubu.tv/' + $routeParams.streamID + '/chatpopup" frameborder="0" scrolling="no" height="100%" width="280"></iframe>');
   			break;
   	};
   }]);

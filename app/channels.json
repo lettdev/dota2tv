@@ -217,5 +217,12 @@
 			"lang"	:	"en",
 			"type"	:	"studio"
 		}
+		{
+			"host"	:	"az",
+			"id"	:	"MarsTVMDLen2",
+			"title"	:	"MarsTV English 2",
+			"lang"	:	"en",
+			"type"	:	"studio"
+		}
 	]
 }
