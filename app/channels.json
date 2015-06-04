@@ -209,6 +209,13 @@
 			"title"	:	"PimpmuckL",
 			"lang"	:	"en",
 			"type"	:	"studio"
+		},
+		{
+			"host"	:	"bc",
+			"id"	:	"4274482393001",
+			"title"	:	"Test",
+			"lang"	:	"en",
+			"type"	:	"studio"
 		}
 	]
 }
