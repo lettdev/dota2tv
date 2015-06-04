@@ -115,6 +115,22 @@ function checkChannelSignal(cData) {
             }
           });
           break;
+        case 'az':
+          $.ajax({
+            url: "http://api.azubu.tv/public/channel/" + cData[i].id,
+            async: false,
+            dataType: 'json',
+            success: function(c) {
+              if (c.data.is_live == false) {
+                cData[i].status = 'Offline';
+                cData[i].description = '';
+              } else {
+                cData[i].status = 'Online';
+                cData[i].description = c.data.title;
+              }
+            }
+          });
+          break;
         default:
           cData[i].status = 'Unknown';
           cData[i].description = '';

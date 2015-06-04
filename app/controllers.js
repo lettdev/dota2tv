@@ -44,7 +44,7 @@ dota2tvControllers.controller('WatchpageCtrl', ['$scope', '$http', '$routeParams
   			$scope.streamChat = $sce.trustAsHtml('<iframe width="100%" height="100%" src="http://www.hitbox.tv/embedchat/' + $routeParams.streamID + '" frameborder="0" allowfullscreen></iframe>');
   			break;
   		case "az":
-  			$scope.streamVid = $sce.trustAsHtml('<iframe src="http://www.azubu.tv/azubulink/embed=' + $routeParams.streamID + '" width="100%" height="100%"></iframe>');
+  			$scope.streamVid = $sce.trustAsHtml('<iframe src="http://www.azubu.tv/azubulink/embed=' + $routeParams.streamID + '" width="100%" height="100%" frameborder="0"></iframe>');
   			$scope.streamChat = $sce.trustAsHtml('<iframe src="http://www.twitch.tv/kradnozd/chat?popout=" frameborder="0" scrolling="no" height="100%" width="280"></iframe>');
   			break;
   	};
